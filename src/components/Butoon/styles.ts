@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Cores } from '../../styles'
 import { Link } from 'react-router-dom'
 
-const ButtonContainer = styled.button`
+export const ButtonContainer = styled.button`
   border: 2px solid ${Cores.branca};
   color: ${Cores.branca};
   background-color: transparent;
