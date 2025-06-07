@@ -19,7 +19,7 @@ const ProductList = ({ background, titulo, games }: Props) => (
             key={game.id}
             category={game.category}
             description={game.description}
-            image={game.description}
+            image={game.image}
             infos={game.infos}
             system={game.system}
             title={game.title}

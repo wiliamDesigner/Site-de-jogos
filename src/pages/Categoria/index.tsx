@@ -1,10 +1,10 @@
-import Banner from '../../components/Banner'
 import ProductList from '../../components/ProductsList'
 import Game from '../../Models/Games'
 import resident from '../../assets/image/images/resident.png'
 import zelda from '../../assets/image/images/zelda.png'
 import diablo from '../../assets/image/images/diablo.png'
 import starwars from '../../assets/image/images/star_wars.png'
+import Banner from '../../components/Banner'
 
 const promocoes: Game[] = [
   {
@@ -87,12 +87,14 @@ const emBreve: Game[] = [
   }
 ]
 
-const Home = () => (
+const Categoria = () => (
   <>
     <Banner />
-    <ProductList games={promocoes} titulo="Promoções" background="gray" />
-    <ProductList games={emBreve} titulo="Em breve" background="black" />
+    <ProductList games={promocoes} titulo="Rpg" background="gray" />
+    <ProductList games={emBreve} titulo="Ação" background="black" />
+    <ProductList games={promocoes} titulo="Aventura" background="gray" />
+    <ProductList games={emBreve} titulo="Terror" background="black" />
   </>
 )
 
-export default Home
+export default Categoria
